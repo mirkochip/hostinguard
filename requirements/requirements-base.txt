@@ -1,0 +1,10 @@
+wheel
+
+django
+djangorestframework
+django-filter
+
+# For Elasticsearch 6.0 and later, use the major version 6 (6.x.y) of the library.
+elasticsearch>=6.0.0,<7.0.0
+
+google-api-python-client

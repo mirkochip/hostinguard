@@ -1,0 +1,14 @@
+tox
+isort
+flake8
+flexmock
+freezegun
+# oauth2client
+
+# Debugging tools
+ipdb
+
+# PyTest for running the tests.
+pytest
+pytest-cov
+pytest-django
