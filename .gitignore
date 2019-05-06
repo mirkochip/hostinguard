@@ -124,3 +124,10 @@ dmypy.json
 
 # Pycharm IDE
 .idea/
+
+# pip
+.pip_download
+.pip_upgrades
+
+# artifact
+*.zip
