@@ -148,3 +148,11 @@ USE_TZ = True
 ###############################
 
 DEBUG = False
+
+# Required, at least, for running unit tests
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}

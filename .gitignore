@@ -131,3 +131,6 @@ dmypy.json
 
 # artifact
 *.zip
+
+# SQL Lite DB
+mydatabase
