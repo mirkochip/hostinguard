@@ -60,6 +60,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = (
+    'api.v1.health',
     'api.v1.hostinguard',
     'django.contrib.admin',
     'django.contrib.auth',
