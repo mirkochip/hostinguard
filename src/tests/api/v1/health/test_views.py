@@ -7,7 +7,7 @@ from rest_framework.test import APITestCase
 
 class TestHealthView(APITestCase):
 
-    def test_post_success(self):
+    def test_get_ok(self):
         url = reverse('health')
         params = {}
         response = self.client.get(url, params)
