@@ -12,3 +12,6 @@ ipdb
 pytest
 pytest-cov
 pytest-django
+
+# it generates dynamically the coverage badge
+coverage-badge

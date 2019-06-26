@@ -20,6 +20,10 @@ tox: venv
 check_forgotten_migrations:
 	@$(PYTHON) src/manage.py makemigrations --check --dry-run
 
+coverage_badge:
+	rm coverage.svg
+	coverage-badge -o coverage.svg
+
 pyclean:
 	@rm -rf .cache
 	@rm -rf htmlcov coverage.xml .coverage
@@ -39,7 +43,7 @@ venv:
 	@$(PIP) install -U pip -q
 	@$(PIP) install -r $(DEPS)
 
-test: pyclean venv check_forgotten_migrations tox
+test: pyclean venv check_forgotten_migrations tox coverage_badge
 
 build: clean artifact
 
