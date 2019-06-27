@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from api.v1.hostinguard.constants import APP1
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -156,4 +157,47 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'mydatabase',
     }
+}
+
+# Google API settings
+#####################
+GOOGLE_API = {
+    APP1: {
+        'API_NAME': 'fake_api_name',
+        'API_VERSION': 'fake_api_version',
+        'SERVICE_ACCOUNT_EMAIL': 'fake@account.email',
+        'KEY_FILE_LOCATION': os.getcwd() + 'fake_file',
+        'SCOPES': 'fake_scopes'
+    },
+}
+
+# cPanel API settings
+#####################
+CPANEL = {
+    APP1: {
+        'HOST': 'fake_host',
+        'USERNAME': 'fake_username',
+        'PASSWORD': 'fake_password',
+        'USE_SSL': False
+    },
+}
+
+# static resource retrieval settings
+####################################
+STATIC_RESOURCE = {
+    APP1: {
+        'FREE_EP': 'fake_ep',
+        'LOGS_EP': 'fake_ep'
+    },
+}
+
+# ElasticSearch settings
+########################
+ES_SERVICE = 'fake_service'
+
+ES = {
+    APP1: {
+        'INDEX': 'fake_index',
+        'DOC_TYPE': 'fake_doc_type'
+    },
 }

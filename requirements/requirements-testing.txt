@@ -3,7 +3,6 @@ isort
 flake8
 flexmock
 freezegun
-# oauth2client
 
 # Debugging tools
 ipdb
