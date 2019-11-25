@@ -38,8 +38,7 @@ class GoogleHandler(object):
 
         result = service.data().realtime().get(
             ids='ga:' + profile,
-            metrics=constants.REAL_TIME_USERS,
-            dimensions=constants.MEDIUM_DIM
+            metrics=constants.REAL_TIME_USERS
         ).execute()
         active_users = int(result['totalsForAllResults'][constants.REAL_TIME_USERS])
         result = service.data().ga().get(
