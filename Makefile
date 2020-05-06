@@ -21,7 +21,7 @@ check_forgotten_migrations:
 	@$(PYTHON) src/manage.py makemigrations --check --dry-run
 
 coverage_badge:
-	rm coverage.svg
+	rm -f coverage.svg
 	coverage-badge -o coverage.svg
 
 pyclean:
