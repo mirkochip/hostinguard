@@ -8,7 +8,7 @@
 A beautiful technical performance dashboard for your hosted web site based on Python, Django, Elasticsearch and Grafana.
 
 ## History
-In 2016 I wanted to help a friend of mine having some severe technical issues with his own hosted high traffic web site. 
+It was July 2016 when I wanted to help a friend of mine having some severe technical issues with his own hosted high traffic web site. 
 
 He experienced a crucial loss of visitors and revenue, so I decided to build for him a technical performance dashboard. Getting beyond the hosting limitations (e.g. permissions regarding installation of software) he was finally able to constantly monitoring the VPS technical performances.
 
